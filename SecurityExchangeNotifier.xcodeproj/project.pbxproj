@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C523F42161A7DFD00A2B3BB /* wqz2V.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C523F41161A7DFD00A2B3BB /* wqz2V.png */; };
+		4C523F44161A80C900A2B3BB /* se.ico in Resources */ = {isa = PBXBuildFile; fileRef = 4C523F43161A80C900A2B3BB /* se.ico */; };
 		823BAB491545BD0500C98751 /* icon_offline.png in Resources */ = {isa = PBXBuildFile; fileRef = 823BAB481545BD0500C98751 /* icon_offline.png */; };
 		823BAB4C1545C7AF00C98751 /* icon_update.png in Resources */ = {isa = PBXBuildFile; fileRef = 823BAB4B1545C7AF00C98751 /* icon_update.png */; };
 		824A924E15324356002033A7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 824A924D15324356002033A7 /* Cocoa.framework */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C523F41161A7DFD00A2B3BB /* wqz2V.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wqz2V.png; sourceTree = "<group>"; };
+		4C523F43161A80C900A2B3BB /* se.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = se.ico; sourceTree = "<group>"; };
 		823BAB481545BD0500C98751 /* icon_offline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_offline.png; sourceTree = "<group>"; };
 		823BAB4B1545C7AF00C98751 /* icon_update.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_update.png; sourceTree = "<group>"; };
 		824A924915324356002033A7 /* SecurityExchangeNotifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecurityExchangeNotifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +115,8 @@
 		824A923E15324356002033A7 = {
 			isa = PBXGroup;
 			children = (
+				4C523F43161A80C900A2B3BB /* se.ico */,
+				4C523F41161A7DFD00A2B3BB /* wqz2V.png */,
 				824A925315324356002033A7 /* SecurityExchangeNotifier */,
 				824A927015324357002033A7 /* SecurityExchangeNotifierTests */,
 				824A924C15324356002033A7 /* Frameworks */,
@@ -324,6 +330,8 @@
 				82A68A7D1539C3EE008DA2E8 /* SettingsWindow.xib in Resources */,
 				823BAB491545BD0500C98751 /* icon_offline.png in Resources */,
 				823BAB4C1545C7AF00C98751 /* icon_update.png in Resources */,
+				4C523F42161A7DFD00A2B3BB /* wqz2V.png in Resources */,
+				4C523F44161A80C900A2B3BB /* se.ico in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
