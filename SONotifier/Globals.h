@@ -1,24 +1,24 @@
 /*
  * Copyright (C) 2012 Binyamin Sharet
  *
- * This file is part of SONotifier.
+ * This file is part of SecurityExchangeNotifier.
  * 
- * SONotifier is free software: you can redistribute it and/or modify
+ * SecurityExchangeNotifier is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  * 
- * SONotifier is distributed in the hope that it will be useful,
+ * SecurityExchangeNotifier is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  * 
  * You should have received a copy of the GNU General Public License
- * along with SONotifier. If not, see <http://www.gnu.org/licenses/>.
+ * along with SecurityExchangeNotifier. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef SONotifier_Globals_h
-#define SONotifier_Globals_h
+#ifndef SecurityExchangeNotifier_Globals_h
+#define SecurityExchangeNotifier_Globals_h
 
 // ***** Source names ***** //
 #define RESOURCE_NAME_ICON_ONLINE   @"icon_online"
@@ -26,13 +26,13 @@
 #define RESOURCE_NAME_ICON_UPDATE   @"icon_update"
 
 // *****  NSUserDefaults keys  ***** //
-#define DATA_KEY_UPDATE_INTERVAL    @"com_bsharet_sonotifier_update_interval"
-#define DATA_KEY_USER_ID            @"com_bsharet_sonotifier_user_id"
-#define DATA_KEY_USER_INFO          @"com_bsharet_sonotifier_user_info"
-#define DATA_KEY_BADGES_INFO        @"com_bsharet_sonotifier_badges_info"
-#define DATA_KEY_REPUTATION_CHANGE  @"com_bsharet_sonotifier_reputation_change"
-#define DATA_KEY_CONFIGURED         @"com_bsharet_sonotifier_configured"
-#define DATA_KEY_LAUNCH_AT_STARTUP  @"com_bsharet_sonotifier_launch_at_startup"
+#define DATA_KEY_UPDATE_INTERVAL    @"com_tiroshboaz_SecurityExchangeNotifier_update_interval"
+#define DATA_KEY_USER_ID            @"com_tiroshboaz_SecurityExchangeNotifier_user_id"
+#define DATA_KEY_USER_INFO          @"com_tiroshboaz_SecurityExchangeNotifier_user_info"
+#define DATA_KEY_BADGES_INFO        @"com_tiroshboaz_SecurityExchangeNotifier_badges_info"
+#define DATA_KEY_REPUTATION_CHANGE  @"com_tiroshboaz_SecurityExchangeNotifier_reputation_change"
+#define DATA_KEY_CONFIGURED         @"com_tiroshboaz_SecurityExchangeNotifier_configured"
+#define DATA_KEY_LAUNCH_AT_STARTUP  @"com_tiroshboaz_SecurityExchangeNotifier_launch_at_startup"
 
 // *****  StackExchange API 2.0  ***** 
 //  Base URL
@@ -92,4 +92,4 @@
 #define CONNECTION_CONNECTED    @"Connected"
 
 
-#endif  //SONotifier_Globals_h
+#endif  //SecurityExchangeNotifier_Globals_h

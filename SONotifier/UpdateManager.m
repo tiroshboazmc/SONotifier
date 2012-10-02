@@ -1,20 +1,20 @@
 /*
  * Copyright (C) 2012 Binyamin Sharet
  *
- * This file is part of SONotifier.
+ * This file is part of SecurityExchangeNotifier.
  * 
- * SONotifier is free software: you can redistribute it and/or modify
+ * SecurityExchangeNotifier is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  * 
- * SONotifier is distributed in the hope that it will be useful,
+ * SecurityExchangeNotifier is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  * 
  * You should have received a copy of the GNU General Public License
- * along with SONotifier. If not, see <http://www.gnu.org/licenses/>.
+ * along with SecurityExchangeNotifier. If not, see <http://www.gnu.org/licenses/>.
  */
 
 #import "UpdateManager.h"
@@ -76,7 +76,7 @@
 
 - (NSString *) buildNewQuestionQuery 
 {
-    return [@"/questions?page=1&pagesize=10&order=desc&sort=activity&site=stackoverflow&filter=" stringByAppendingString:API_20_FILTER_QUESTIONS];
+    return [@"/questions?page=1&pagesize=10&order=desc&sort=activity&site=security&filter=" stringByAppendingString:API_20_FILTER_QUESTIONS];
 }
 
 - (BOOL) fetchUserInfoFromServer
@@ -84,7 +84,7 @@
     NSString * apiRequest;
     NSString * responseStr;    
     NSLog(@"[UpdateManager/bgUpdate] Getting user info");    
-    apiRequest = [NSString stringWithFormat:@"/users/%@?site=stackoverflow", userId];
+    apiRequest = [NSString stringWithFormat:@"/users/%@?site=security", userId];
     responseStr = [self getDataForApiRequest:apiRequest];
     if (responseStr != nil)
     {
@@ -105,7 +105,7 @@
     //badges for the last week
     NSTimeInterval interval = [[NSDate date ]timeIntervalSince1970];
     interval = interval - (7 * 24 * 60 * 60);    
-    apiRequest = [NSString stringWithFormat:@"/users/%@/badges?order=desc&min=%.0f&sort=awarded&site=stackoverflow", userId, interval];
+    apiRequest = [NSString stringWithFormat:@"/users/%@/badges?order=desc&min=%.0f&sort=awarded&site=security", userId, interval];
     responseStr = [self getDataForApiRequest:apiRequest];
     if (responseStr != nil)
     {
@@ -123,7 +123,7 @@
     NSString * apiRequest;
     NSString * responseStr;
     NSLog(@"[UpdateManager/bgUpdate] Getting reputation changes");    
-    apiRequest = [NSString stringWithFormat:@"/users/%@/reputation?page=1&pagesize=14&site=stackoverflow&filter=!amIOctbmUQ-Bx0", userId];
+    apiRequest = [NSString stringWithFormat:@"/users/%@/reputation?page=1&pagesize=14&site=security&filter=!amIOctbmUQ-Bx0", userId];
     responseStr = [self getDataForApiRequest:apiRequest];
     
     if (responseStr != nil)

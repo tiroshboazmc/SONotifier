@@ -1,14 +1,14 @@
 //
-//  SONotifierTests.m
-//  SONotifierTests
+//  SecurityExchangeNotifierTests.m
+//  SecurityExchangeNotifierTests
 //
 //  Created by Sharet, Binyamin on 4/9/12.
 //  Copyright (c) 2012 Binyamin Sharet. All rights reserved.
 //
 
-#import "SONotifierTests.h"
+#import "SecurityExchangeNotifierTests.h"
 
-@implementation SONotifierTests
+@implementation SecurityExchangeNotifierTests
 
 - (void)setUp
 {
@@ -26,7 +26,7 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in SONotifierTests");
+    STFail(@"Unit tests are not implemented yet in SecurityExchangeNotifierTests");
 }
 
 @end
