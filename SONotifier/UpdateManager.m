@@ -123,7 +123,7 @@
     NSString * apiRequest;
     NSString * responseStr;
     NSLog(@"[UpdateManager/bgUpdate] Getting reputation changes");    
-    apiRequest = [NSString stringWithFormat:@"/users/%@/reputation?page=1&pagesize=14&site=security&filter=!amIOctbmUQ-Bx0", userId];
+    apiRequest = [NSString stringWithFormat:@"/users/%@/reputation?page=1&pagesize=14&site=security&filter=s39JNyQlc4H74vQQgts4nw((", userId];
     responseStr = [self getDataForApiRequest:apiRequest];
     
     if (responseStr != nil)
